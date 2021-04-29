@@ -1,0 +1,40 @@
+name: smorl
+channels:
+- pytorch
+- anaconda  # for mkl
+- conda-forge  # for pybox2d
+dependencies:
+- cython
+- joblib
+- lockfile
+- mako=1.0.6
+- matplotlib
+- mkl=2018.0.2  # Need to add explicit dependence for pytorch
+- numba=0.35.0
+- path.py=10.3.1
+- pybox2d=2.3.10
+- python=3.6
+- python-dateutil=2.6.1
+- scipy
+- patchelf
+- pytorch=1.2.0
+- torchvision=0.4.0
+- pip
+
+- pip:
+  - cloudpickle==0.5.2
+  - gym[all]==0.10.5
+  - gitpython==2.1.7
+  - gtimer==1.0.0b5
+  - numpy==1.16.0
+  - pygame==1.9.3
+  - parso == 0.7.1 
+  - boto3
+  - ipdb  # technically unnecessary
+  - opencv-python==3.4.3.18
+  - einops
+  - sk-video
+  - jupyter
+  - future-fstrings
+  - tensorboardX
+  - numpy-stl
