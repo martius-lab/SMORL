@@ -20,8 +20,8 @@ conda activate smorl
 Next, install out modification of `rlkit` and `multiworld` packages. For this, change your dir to the cloned repo and run 
 
 ```
-pip install -e ./multiworld
-pip install -e ./rlkit
+python -m pip install -e ./multiworld
+python -m pip install -e ./rlkit
 ```
 
 Finally, to test that everything installed correctly you can run tests for SMORL:
