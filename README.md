@@ -94,4 +94,4 @@ Please use the following bibtex entry to cite us:
 
 ## Credits
 
-We used [RLkit](https://github.com/vitchyr/rlkit) and [multiworld](https://github.com/vitchyr/multiworld) by Vitchyr Pong for RL infrastructure and SAC+HER training implementation as well as environments implementations. Also, we used the official [SCALOR implementation](https://github.com/JindongJiang/SCALOR) by Jindong Jiang.
+We used [RLkit](https://github.com/vitchyr/rlkit) and [multiworld](https://github.com/vitchyr/multiworld) by Vitchyr Pong for RL infrastructure and SAC+HER training implementation as well as environments implementations. Also, the SCALOR implementation is an adapted version of the official [SCALOR implementation](https://github.com/JindongJiang/SCALOR) by Jindong Jiang.
