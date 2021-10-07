@@ -1,6 +1,6 @@
 # Self-Supervised Visual Reinforcement Learning with Object-Centric Representations (SMORL)
 
-This repository contains the code release for the paper [Self-Supervised Visual Reinforcement Learning with Object-Centric Representations](https://arxiv.org/abs/2011.14381) by Andrii Zadaianchuk, Maximilian Seitzer, and Georg Martius, published as a *spotlight at ICLR 2021*. Please use the [provided citation](#citation) when making use of our code or ideas.
+This repository contains the code release for the paper [Self-Supervised Visual Reinforcement Learning with Object-Centric Representations](https://arxiv.org/abs/2011.14381) by Andrii Zadaianchuk, Maximilian Seitzer, and Georg Martius, published as a [*spotlight at ICLR 2021*](https://iclr.cc/virtual/2021/spotlight/3422). Please use the [provided citation](#citation) when making use of our code or ideas.
 
 The code is an adaptation of [RLkit](https://github.com/vitchyr/rlkit) for RL code and [multiworld](https://github.com/vitchyr/multiworld) for environments, both under MIT license.
 
