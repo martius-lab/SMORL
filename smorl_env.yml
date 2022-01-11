@@ -22,6 +22,7 @@ dependencies:
 - pip
 
 - pip:
+  - mujoco-py==2.0.2.13
   - cloudpickle==0.5.2
   - gym[all]==0.10.5
   - gitpython==2.1.7
