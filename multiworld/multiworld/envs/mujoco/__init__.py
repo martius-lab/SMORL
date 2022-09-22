@@ -116,10 +116,7 @@ def register_mujoco_envs():
         id='SawyerPushMultiObjectEnv-v1',
         entry_point='multiworld.envs.mujoco.sawyer_xyz'
                     '.sawyer_push_multiobj:SawyerTreeObjectEnv',
-        tags={
-            'git-commit-hash': 'ddd73dc',
-            'author': 'murtaza',
-        },
+
         kwargs=dict()
     )
 
@@ -127,10 +124,7 @@ def register_mujoco_envs():
         id='SawyerPushMultiObjectEnv-v0',
         entry_point='multiworld.envs.mujoco.sawyer_xyz'
                     '.sawyer_push_multiobj:SawyerTwoObjectEnv',
-        tags={
-            'git-commit-hash': 'ddd73dc',
-            'author': 'murtaza',
-        },
+
         kwargs=dict()
     )
 
@@ -141,10 +135,6 @@ def register_mujoco_envs():
     register(
         id='SawyerReachXYEnv-v1',
         entry_point='multiworld.envs.mujoco.sawyer_xyz.sawyer_reach:SawyerReachXYEnv',
-        tags={
-            'git-commit-hash': '2d95c75',
-            'author': 'murtaza'
-        },
         kwargs={
             'hide_goal_markers': True,
             'norm_order': 2,
@@ -154,10 +144,6 @@ def register_mujoco_envs():
     register(
         id='SawyerReachXYZEnv-v0',
         entry_point='multiworld.envs.mujoco.sawyer_xyz.sawyer_reach:SawyerReachXYZEnv',
-        tags={
-            'git-commit-hash': '7b3113b',
-            'author': 'vitchyr'
-        },
         kwargs={
             'hide_goal_markers': False,
             'norm_order': 2,
@@ -167,10 +153,6 @@ def register_mujoco_envs():
     register(
         id='SawyerReachXYZEnv-v1',
         entry_point='multiworld.envs.mujoco.sawyer_xyz.sawyer_reach:SawyerReachXYZEnv',
-        tags={
-            'git-commit-hash': 'bea5de',
-            'author': 'murtaza'
-        },
         kwargs={
             'hide_goal_markers': True,
             'norm_order': 2,
@@ -218,10 +200,7 @@ def register_mujoco_envs():
         id='SawyerPushAndReachEnvEasy-v0',
         entry_point='multiworld.envs.mujoco.sawyer_xyz'
                     '.sawyer_push_and_reach_env:SawyerPushAndReachXYEnv',
-        tags={
-            'git-commit-hash': 'ddd73dc',
-            'author': 'murtaza',
-        },
+
         kwargs=dict(
             goal_low=(-0.15, 0.4, 0.02, -.1, .45),
             goal_high=(0.15, 0.7, 0.02, .1, .65),
@@ -241,10 +220,7 @@ def register_mujoco_envs():
         id='SawyerPushAndReachEnvMedium-v0',
         entry_point='multiworld.envs.mujoco.sawyer_xyz'
                     '.sawyer_push_and_reach_env:SawyerPushAndReachXYEnv',
-        tags={
-            'git-commit-hash': 'ddd73dc',
-            'author': 'murtaza',
-        },
+
         kwargs=dict(
             goal_low=(-0.2, 0.35, 0.02, -.15, .4),
             goal_high=(0.2, 0.75, 0.02, .15, .7),
@@ -264,10 +240,7 @@ def register_mujoco_envs():
         id='SawyerPushAndReachEnvHard-v0',
         entry_point='multiworld.envs.mujoco.sawyer_xyz'
                     '.sawyer_push_and_reach_env:SawyerPushAndReachXYEnv',
-        tags={
-            'git-commit-hash': 'ddd73dc',
-            'author': 'murtaza',
-        },
+
         kwargs=dict(
             goal_low=(-0.25, 0.3, 0.02, -.2, .35),
             goal_high=(0.25, 0.8, 0.02, .2, .75),

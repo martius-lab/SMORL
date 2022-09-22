@@ -1,4 +1,3 @@
-# -*- coding: future_fstrings -*-
 
 import torch
 from copy import copy

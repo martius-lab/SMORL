@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "smorl"
+version = "0.2.0"
+description = ""
+authors = ["Andrii Zadaianchuk"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+torch = "^1.12.1"
+torchvision = "^0.13.1"
+numba = "^0.56.2"
+mujoco-py = "^2.1.2.14"
+pygame = "^2.1.2"
+einops = "^0.4.1"
+GitPython = "^3.1.27"
+scipy = "^1.9.1"
+cloudpickle = "1.2.0"
+python-dateutil = "^2.8.2"
+gym = "0.15.4"
+opencv-python = "^4.6.0.66"
+matplotlib = "^3.6.0"
+gtimer = "^1.0.0b5"
+numpy-stl = "^2.17.1"
+tensorboardX = "^2.5.1"
+scikit-video = "^1.1.11"
+joblib = "^1.2.0"
+boto3 = "^1.24.78"
+multiworld = {path = "./multiworld", develop = true}
+rlkit = {path = "./rlkit", develop = true}
+viskit = { git = "https://github.com/vitchyr/viskit", branch = "master" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

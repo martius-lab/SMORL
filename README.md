@@ -9,22 +9,13 @@ The code is an adaptation of [RLkit](https://github.com/vitchyr/rlkit) for RL co
 Autonomous agents need large repertoires of skills to act reasonably on new tasks that they have not seen before. However, acquiring these skills using only a stream of high-dimensional, unstructured, and unlabeled observations is a tricky challenge for any autonomous agent. Previous methods have used variational autoencoders to encode a scene into a low-dimensional vector that can be used as a goal for an agent to discover new skills. Nevertheless, in compositional/multi-object environments it is difficult to disentangle all the factors of variation into such a fixed-length representation of the whole scene. We propose to use object-centric representations as a modular and structured observation space, which is learned with a compositional generative world model. We show that the structure in the representations in combination with goal-conditioned attention policies helps the autonomous agent to discover and learn useful skills. These skills can be further combined to address compositional tasks like the manipulation of several different objects. 
 
 ## Install
+0. Install [poetry](https://python-poetry.org/docs/#installation) and make sure that correct version of python is installed.
+1. Install [MuJoCo](https://github.com/nimrod-gileadi/mujoco-py#install-mujoco)
+2. Create and activate a new poetry environment with 
+`poetry install` and `poetry shell` that you run from repo folder.
 
-First, create and activate a new conda environment with 
 
-```
-conda env create -f smorl_env.yml
-conda activate smorl
-```
-
-Next, install out modification of `rlkit` and `multiworld` packages. For this, change your dir to the cloned repo and run 
-
-```
-python -m pip install -e ./multiworld
-python -m pip install -e ./rlkit
-```
-
-Finally, to test that everything installed correctly you can run tests for SMORL:
+To test that everything installed correctly you can run tests for SMORL:
 
 ```
 python -W ignore  ./rlkit/settings/smorl/smoke_test.py
@@ -63,16 +54,14 @@ variant["scalor_path"]="path/to/checkpoint"
 ```
 
 ### Visualization of the results 
-The visualization of the results is similar to the original `rlkit` package. 
-So please install `viskit` package from [here](https://github.com/vitchyr/viskit). 
-
-After this, you can run a visualization of the results by 
+You can run a visualization of the SMORL training results by 
 
 ```
 python viskit/frontend.py ./rlkit/data/exp_name/
 ```
+If you want additionally visualize SCALOR training please run `tensorboard` with SCALOR training results dir.
 
-Also, you can visualize learned policy by running 
+Finally, you can visualize learned policy by running 
 
 ```
 python rlkit/scripts/run_goal_conditioned_policy.py ./rlkit/data/exp_name/params.pkl
@@ -94,4 +83,4 @@ Please use the following bibtex entry to cite us:
 
 ## Credits
 
-We used [RLkit](https://github.com/vitchyr/rlkit) and [multiworld](https://github.com/vitchyr/multiworld) by Vitchyr Pong for RL infrastructure and SAC+HER training implementation as well as environments implementations. Also, the SCALOR implementation is an adapted version of the official [SCALOR implementation](https://github.com/JindongJiang/SCALOR) by Jindong Jiang.
+We used [RLkit](https://github.com/vitchyr/rlkit), [multiworld](https://github.com/vitchyr/multiworld) and [viskit](https://github.com/vitchyr/viskit) by Vitchyr Pong for RL infrastructure and SAC+HER training implementation as well as environments implementations. Also, the SCALOR implementation is an adapted version of the official [SCALOR implementation](https://github.com/JindongJiang/SCALOR) by Jindong Jiang.

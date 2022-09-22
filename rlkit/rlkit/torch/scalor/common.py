@@ -1,4 +1,3 @@
-# -*- coding: future_fstrings -*-
 
 from argparse import Namespace
 
